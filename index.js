@@ -1,7 +1,7 @@
 const amountToSend = 1; // default = 1
 const tickTimeInMilliseconds = 1000; // default = 1000
 const message = `
-Hello
+magic mushrooms online for a good price mushroom-spore-perfection.squarespace.com
 `
 
 // DO NOT EDIT BELOW THIS LINE (unless you know what you're doing)
@@ -23,6 +23,9 @@ function Tick() {
     if (ShouldSend()) {
         console.log("Sending message");
         SendMessage();
+        setTimeout(() => {
+            FindNewChat();
+        }, amountToSend * 100);
     }
 
     else {
@@ -34,10 +37,11 @@ function Tick() {
 function SendMessage() {
     for (let i = amountToSend; i > 0; i--) {
         chatBox.innerText = message;
-        sendButton.click();    
+        setTimeout(() => {
+            sendButton.click();
+        }, 50);
+            
     }
-
-    FindNewChat();
 }
 
 function ShouldSend() {
