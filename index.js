@@ -1,7 +1,7 @@
 const amountToSend = 1; // default = 1
 const tickTimeInMilliseconds = 1000; // default = 1000
 const message = `
-magic mushrooms online for a good price mushroom-spore-perfection.squarespace.com
+Put message here
 `
 
 // DO NOT EDIT BELOW THIS LINE (unless you know what you're doing)
